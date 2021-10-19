@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/light.css" id="theme" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1 id="Page_Title">Calculator</h1>
+      <br>
+      <div class="row">
+        <input type="text" name="result" class="result" id="result" value="" placeholder="Result" />
+      </div>
+      <div class="row">
+        <input type="button" value="(" onclick="toCalc('(')" class="operation" />
+        <input type="button" value=")" onclick="toCalc(')')" class="operation" />
+        <input type="button" value="C" onclick="clearScreen()" id="clear" />
+        <input type="button" value="del" onclick="backSpace()" id="clear" />
+      </div>
+      <div class="row">
+        <input type="button" value="1" onclick="toCalc(1)" class="numbers" />
+        <input type="button" value="2" onclick="toCalc(2)" class="numbers" />
+        <input type="button" value="3" onclick="toCalc(3)" class="numbers" />
+        <input type="button" class="operation" value="+" onclick="toCalc('+')" />
+      </div>
+      <div class="row">
+        <input type="button" value="4" class="numbers" onclick="toCalc(4)" />
+        <input type="button" value="5" class="numbers" onclick="toCalc(5)" />
+        <input type="button" value="6" class="numbers" onclick="toCalc(6)" />
+        <input type="button" class="operation" value="-" onclick="toCalc('-')" />
+      </div>
+      <div class="row">
+        <input type="button" value="7" class="numbers" onclick="toCalc(7)" />
+        <input type="button" value="8" class="numbers" onclick="toCalc(8)" />
+        <input type="button" value="9" class="numbers" onclick="toCalc(9)" />
+        <input type="button" class="operation" value="x" onclick="toCalc('*')" />
+      </div>
+      <div class="row">
+        <input type="button" value="=" class="operation" id="calculate" onclick="result.value = eval(result.value)" />
+        <input type="button" value="0" class="numbers" onclick="toCalc(0)" />
+        <input type="button" value="." class="numbers" onclick="toCalc('.')" />
+        <input type="button" class="operation" value="/" onclick="toCalc('/')" />
+      </div>
+      <div class="bottom-button">
+        <button onclick="changeTheme()" id="change-theme">
+          Switch to Dark Mode
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+
+</html>

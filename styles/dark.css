@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+::placeholder {
+  color: rgb(221, 221, 221);
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#041036,#431344);
+  transition: 0.5s all;
+}
+#calculate{
+  background-color: #058601 ;
+}
+#Page_Title {
+color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5%;
+  color: white;
+}
+.result {
+  width: 59.1%;
+}
+input {
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  cursor: pointer;
+  width: 70px;
+  background-color: rgb(29, 31, 30);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.row {
+  margin-bottom: 3px;
+}
+input[type="text"] {
+  background-color: rgb(47, 51, 50);
+  width: 293px;
+}
+input[type="button"]:hover {
+  background-color: rgb(160, 160, 160);
+  color: white;
+}
+#clear {
+  color: white;
+  background-color: #e91e10;
+}
+button {
+  border: none;
+  background-color: rgb(54, 2, 37);
+  padding: 8px;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+.numbers{
+  background-color: #072025;
+}
+.operation{
+  background-color: #ff9500;
+}
+
+.bottom-button {
+  display: flex;
+  padding-top: 1.5em;
+  padding-left: 6.5em;
+}
